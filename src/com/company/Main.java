@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 	Animal dog = new Animal("owczarek");
-	dog.name ="Edzio";
+	dog.name ="Szarik";
 
     // dog.weight = 22.0;
 
@@ -30,5 +30,8 @@ public class Main {
         dog.takeForAWalk();
         dog.takeForAWalk();
         dog.takeForAWalk();
+
+
+
     }
 }
