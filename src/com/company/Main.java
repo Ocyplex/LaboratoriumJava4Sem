@@ -34,4 +34,7 @@ public class Main {
 
 
     }
+
+    Human human = new Human();
+
 }
