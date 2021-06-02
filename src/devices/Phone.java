@@ -1,23 +1,22 @@
 package devices;
 
-public class Phone {
-    String producer;
-    String model;
-    String operationSystem;
-    Double screenSize;
+public class Phone extends Device
+{
+    public String producer;
+    public String model;
+    public String operationSystem;
+    public Double screenSize;
 
     public Phone(String producer, String model){
         this.producer = producer;
         this.model = model;
  }
 
+
+
     @Override
-    public String toString() {
-        return "Phone{" +
-                "producer='" + producer + '\'' +
-                ", model='" + model + '\'' +
-                ", operationSystem='" + operationSystem + '\'' +
-                ", screenSize=" + screenSize +
-                '}';
+    public void turnOn() {
+        super.turnOn();
+        this.mode = "Wlaczona komorka";
     }
 }

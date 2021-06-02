@@ -1,8 +1,8 @@
 package devices;
 
-public class Car {
-
-    public final String producer;
+public class Car extends Device
+{
+    public String producer;
     public final String model;
     public Double value;
 
@@ -12,11 +12,18 @@ public class Car {
                 "producer='" + producer + '\'' +
                 ", model='" + model + '\'' +
                 ", value=" + value +
+                ", mode='" + mode + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
                 '}';
     }
 
     public Car(String producer, String model) {
-        this.producer = producer;
         this.model = model;
+    }
+
+    @Override
+    public void turnOn() {
+        super.turnOn();
+        this.mode = "Odpalony samochod";
     }
 }
