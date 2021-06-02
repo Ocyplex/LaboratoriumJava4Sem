@@ -5,4 +5,9 @@ public class Phone {
     String model;
     String operationSystem;
     Double screenSize;
+
+    public Phone(){
+
+
+    }
 }
