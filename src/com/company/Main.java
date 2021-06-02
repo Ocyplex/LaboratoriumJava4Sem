@@ -4,6 +4,7 @@ import jdk.jfr.Unsigned;
 
 public class Main {
 
+
     public static void main(String[] args) {
 	Animal dog = new Animal("owczarek");
 	dog.name ="Szarik";
@@ -31,10 +32,13 @@ public class Main {
         dog.takeForAWalk();
         dog.takeForAWalk();
 
+        Human human = new Human(100.0);
+
+
+
 
 
     }
 
-    Human human = new Human();
 
 }
