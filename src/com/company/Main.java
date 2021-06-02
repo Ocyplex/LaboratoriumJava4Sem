@@ -19,22 +19,26 @@ public class Main {
 
         Animal dog = new Animal("owczarek");
 	        dog.name ="Szarik";
-            System.out.println("Dogname = "+ dog.name);
-            System.out.println("Rasa = "+ dog.species);
 
             Phone iphone = new Phone();
             iphone.producer = "apple";
             iphone.model = "10";
 
 
-
+        /*
         dog.takeForAWalk();
         dog.feed();
         dog.takeForAWalk();
         dog.takeForAWalk();
         dog.takeForAWalk();
+        */
 
-        Human human = new Human(100.0);
+        Human human = new Human("Edzio","Dawny",50,3000.0);
+
+        Car vwpassat = new Car("Volkswagen","Passat");
+        human.car = vwpassat;
+
+        System.out.println("Samochod od " + human.name +" to " + vwpassat.producer+" " + vwpassat.model);
 
 
 
