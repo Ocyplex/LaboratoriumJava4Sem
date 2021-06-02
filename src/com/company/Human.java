@@ -9,7 +9,7 @@ public class Human {
     String job;
 
     Animal pet;
-    Car car;
+    private Car car;
 
     public Human(String name, String lastname, Integer age, Double salary) {
         this.name = name;
@@ -20,7 +20,26 @@ public class Human {
     private  double salary;
 
 
+    public Car getCar() {
+        return car;
+    }
 
+    public void setCar(Car car) {
+        if(salary > car.value)
+        {
+            if ( car.value+(car.value/12) > salary)
+            {
+                System.out.println("Kupiles auto na kredyt");
+                this.car = car;
+            }else{
+                System.out.println("Gratulacje kupiles samochod i to bez kredytu");
+                this.car = car;
+            }
+        }else{
+            System.out.println("Nie stac cie na ten samochod. Zmien Prace czy cos tam!");
+        }
+
+    }
 
     public  Double getSalary(){
         System.out.println("Pobrano informacje o wyplacie w " + java.util.Calendar.getInstance().getTime());
