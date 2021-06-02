@@ -2,15 +2,23 @@ package com.company;
 
 import jdk.jfr.Unsigned;
 
+/*Moje notatki
+
+            int a;
+            Integer aa;
+            final niezmienialne
+
+
+ */
+
+
 public class Main {
 
 
     public static void main(String[] args) {
-	Animal dog = new Animal("owczarek");
-	dog.name ="Szarik";
 
-    // dog.weight = 22.0;
-
+        Animal dog = new Animal("owczarek");
+	        dog.name ="Szarik";
             System.out.println("Dogname = "+ dog.name);
             System.out.println("Rasa = "+ dog.species);
 
@@ -18,12 +26,6 @@ public class Main {
             iphone.producer = "apple";
             iphone.model = "10";
 
-
-            int a;
-            Integer aa;
-
-
-            //final niezmienialne
 
 
         dog.takeForAWalk();

@@ -20,16 +20,16 @@ public class Animal {
     }
     void feed(){
         this.weight += 1;
-        System.out.println("Karmimy");
+        System.out.println("Karmimy " + this.name);
     }
 
     void takeForAWalk()
     {
         this.weight -= 1;
-        System.out.println("Wychodzimy");
+        System.out.println("Wychodzimy z " + this.name );
         if(weight < 1)
         {
-            System.out.println("Animal died");
+            System.out.println(this.name +" died");
         }
 
     }
