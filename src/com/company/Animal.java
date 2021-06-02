@@ -18,6 +18,17 @@ public class Animal {
             default:this.weight = DEFAULT_ANIMAL_WEIGHT;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", species='" + species + '\'' +
+                ", pic=" + pic +
+                '}';
+    }
+
     void feed(){
         this.weight += 1;
         System.out.println("Karmimy " + this.name);

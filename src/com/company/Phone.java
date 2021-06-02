@@ -6,8 +6,18 @@ public class Phone {
     String operationSystem;
     Double screenSize;
 
-    public Phone(){
+    public Phone(String producer, String model){
+        this.producer = producer;
+        this.model = model;
+ }
 
-
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", operationSystem='" + operationSystem + '\'' +
+                ", screenSize=" + screenSize +
+                '}';
     }
 }

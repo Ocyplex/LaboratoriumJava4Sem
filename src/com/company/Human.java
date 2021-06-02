@@ -11,6 +11,20 @@ public class Human {
     Animal pet;
     private Car car;
 
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                ", job='" + job + '\'' +
+                ", pet=" + pet +
+                ", car=" + car +
+                ", salary=" + salary +
+                '}';
+    }
+
     public Human(String name, String lastname, Integer age, Double salary) {
         this.name = name;
         this.lastname = lastname;
