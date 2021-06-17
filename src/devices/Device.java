@@ -1,6 +1,8 @@
 package devices;
 
-public abstract class Device {
+import com.company.Sellable;
+
+public abstract class Device implements Sellable {
 
     public String producer;
     public String mode;
