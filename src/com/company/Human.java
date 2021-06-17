@@ -1,17 +1,20 @@
 package com.company;
 
 import devices.Car;
+import devices.Phone;
 
-public class Human {
+public class Human{
 
-    String name;
+    public String name;
     String lastname;
     String gender;
     Integer age;
     String job;
+    public Double cash;
 
     Animal pet;
     private Car car;
+    public Phone phone;
 
     @Override
     public String toString() {
@@ -21,17 +24,19 @@ public class Human {
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
                 ", job='" + job + '\'' +
+                ", cash=" + cash +
                 ", pet=" + pet +
                 ", car=" + car +
                 ", salary=" + salary +
                 '}';
     }
 
-    public Human(String name, String lastname, Integer age, Double salary) {
+    public Human(String name, String lastname, Integer age, Double salary, Double cash) {
         this.name = name;
         this.lastname = lastname;
         this.age = age;
         this.salary = salary;
+        this.cash = cash;
     }
     private  double salary;
 
@@ -56,6 +61,10 @@ public class Human {
         }
 
     }
+    public void setsCar(Car car)//Wpisywanie samochodu
+    {
+        this.car = car;
+    }
 
     public  Double getSalary(){
         System.out.println("Pobrano informacje o wyplacie w " + java.util.Calendar.getInstance().getTime());
@@ -74,4 +83,6 @@ public class Human {
         {
             System.out.println("Niemozna przepisac ujemnej wartosci");
         }
-}}
+        }
+
+}
