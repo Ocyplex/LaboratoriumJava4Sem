@@ -32,6 +32,11 @@ public class Phone extends Device
     }
 
     @Override
+    public void sell(Human humanSeller, Human humanBuyer) {
+
+    }
+
+    @Override
     public void sell(Human humanSeller, Human humanBuyer, double price) {
         if(humanSeller.phone==null)
         {
