@@ -2,14 +2,23 @@ package devices;
 
 import com.company.Human;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Phone extends Device
 {
     public String producer;
     public String model;
     public String operationSystem;
     public Double screenSize;
+    public String appName;
+    public String appVersion;
+    public  List<String> appList = new ArrayList<>();
+    public  List<String> appToInstallList = new ArrayList<>();
+    public String serverAdress;
+    static final String finalServerAdress = null;
 
-    public Phone(String producer, String model){
+    public Phone(String producer, String model,String finalServerAdress){
         this.producer = producer;
         this.model = model;
  }
@@ -48,5 +57,31 @@ public class Phone extends Device
             System.out.println(humanSeller.name + "nieposiada tej komorki!");
         }
     }
+    public void installAnnApp(String appName){
+        this.appName = appName;
+        System.out.println("Zainstalowales " + appName);
+        appList.add(appName);
+    }
+
+    public void installAnnApp(String appName,String appVersion){
+        this.appName = appName;
+        this.appVersion = appVersion;
+        System.out.println("Zainstalowales " + appName + " z wersja " + appVersion);
+        appList.add(appName);
+    }
+
+    public void installAnnApp(String appName, String appVersion, String serverAdress){
+        this.appName = appName;
+        this.appVersion = appVersion;
+        this.serverAdress = serverAdress;
+        System.out.println("Zainstalowales " + appName + " z wersja " + appVersion + " z serwera "+ serverAdress);
+        appList.add(appName);
+    }
+
+    public void installAnnApp(List appToInstallList){
+        this.appList = appList;
+        System.out.println("Zainstalowales liste applikacji");
+    }
+
 
 }

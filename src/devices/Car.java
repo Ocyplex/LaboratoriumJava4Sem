@@ -2,7 +2,7 @@ package devices;
 
 import com.company.Human;
 
-public class Car extends Device
+public abstract class Car extends Device
 {
     public String producer;
     public final String model;
@@ -55,5 +55,8 @@ public class Car extends Device
         } else {
             System.out.println(humanSeller.name + "nieposiada tego samochodu!");
         }
+    }
+    public void refuel(){
+
     }
 }
